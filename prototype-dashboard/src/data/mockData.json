@@ -1,0 +1,185 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "name": "Jane Doe",
+        "age": 20,
+        "courses": ["Math 101", "Science 201", "History 101"],
+        "performance": 85,
+        "attendance": [
+          {"date": "2024-09-01", "status": "Present"},
+          {"date": "2024-09-02", "status": "Absent"},
+          {"date": "2024-09-03", "status": "Present"}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "John Smith",
+        "age": 22,
+        "courses": ["Math 101", "Physics 202", "Chemistry 301"],
+        "performance": 90,
+        "attendance": [
+          {"date": "2024-09-01", "status": "Present"},
+          {"date": "2024-09-02", "status": "Present"},
+          {"date": "2024-09-03", "status": "Absent"}
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sarah Johnson",
+        "age": 21,
+        "courses": ["Biology 101", "Chemistry 301", "Math 101"],
+        "performance": 78,
+        "attendance": [
+          {"date": "2024-09-01", "status": "Present"},
+          {"date": "2024-09-02", "status": "Present"},
+          {"date": "2024-09-03", "status": "Present"}
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Michael Brown",
+        "age": 23,
+        "courses": ["History 101", "Science 201", "Physics 202"],
+        "performance": 72,
+        "attendance": [
+          {"date": "2024-09-01", "status": "Absent"},
+          {"date": "2024-09-02", "status": "Present"},
+          {"date": "2024-09-03", "status": "Present"}
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Emily Davis",
+        "age": 20,
+        "courses": ["Math 101", "Science 201", "English 102"],
+        "performance": 88,
+        "attendance": [
+          {"date": "2024-09-01", "status": "Present"},
+          {"date": "2024-09-02", "status": "Present"},
+          {"date": "2024-09-03", "status": "Present"}
+        ]
+      }
+    ],
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Mr. Anderson",
+        "subject": "Math",
+        "yearsOfExperience": 10,
+        "availability": [
+          {"day": "Monday", "time": "08:00 - 12:00"},
+          {"day": "Wednesday", "time": "10:00 - 14:00"}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Mrs. Johnson",
+        "subject": "Science",
+        "yearsOfExperience": 7,
+        "availability": [
+          {"day": "Tuesday", "time": "09:00 - 13:00"},
+          {"day": "Thursday", "time": "11:00 - 15:00"}
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Dr. Lee",
+        "subject": "Physics",
+        "yearsOfExperience": 15,
+        "availability": [
+          {"day": "Monday", "time": "12:00 - 16:00"},
+          {"day": "Friday", "time": "09:00 - 12:00"}
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Ms. Martinez",
+        "subject": "Chemistry",
+        "yearsOfExperience": 8,
+        "availability": [
+          {"day": "Wednesday", "time": "08:00 - 11:00"},
+          {"day": "Friday", "time": "13:00 - 17:00"}
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Mr. Smith",
+        "subject": "History",
+        "yearsOfExperience": 12,
+        "availability": [
+          {"day": "Tuesday", "time": "10:00 - 14:00"},
+          {"day": "Thursday", "time": "08:00 - 12:00"}
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "id": 101,
+        "title": "Math 101",
+        "description": "Introduction to Algebra",
+        "teacherId": 1,
+        "schedule": [
+          {"day": "Monday", "time": "08:00 - 09:30"},
+          {"day": "Wednesday", "time": "10:00 - 11:30"}
+        ],
+        "studentsEnrolled": [1, 2, 3, 5]
+      },
+      {
+        "id": 102,
+        "title": "Science 201",
+        "description": "Basics of Physics and Chemistry",
+        "teacherId": 2,
+        "schedule": [
+          {"day": "Tuesday", "time": "09:00 - 10:30"},
+          {"day": "Thursday", "time": "11:00 - 12:30"}
+        ],
+        "studentsEnrolled": [1, 4, 5]
+      },
+      {
+        "id": 103,
+        "title": "Physics 202",
+        "description": "Advanced Mechanics and Thermodynamics",
+        "teacherId": 3,
+        "schedule": [
+          {"day": "Monday", "time": "12:00 - 13:30"},
+          {"day": "Friday", "time": "09:00 - 10:30"}
+        ],
+        "studentsEnrolled": [2, 4]
+      },
+      {
+        "id": 104,
+        "title": "Chemistry 301",
+        "description": "Organic and Inorganic Chemistry",
+        "teacherId": 4,
+        "schedule": [
+          {"day": "Wednesday", "time": "08:00 - 09:30"},
+          {"day": "Friday", "time": "13:00 - 14:30"}
+        ],
+        "studentsEnrolled": [2, 3]
+      },
+      {
+        "id": 105,
+        "title": "History 101",
+        "description": "World History Overview",
+        "teacherId": 5,
+        "schedule": [
+          {"day": "Tuesday", "time": "10:00 - 11:30"},
+          {"day": "Thursday", "time": "08:00 - 09:30"}
+        ],
+        "studentsEnrolled": [1, 4]
+      },
+      {
+        "id": 106,
+        "title": "English 102",
+        "description": "Intermediate English Language Skills",
+        "teacherId": 1,
+        "schedule": [
+          {"day": "Monday", "time": "14:00 - 15:30"},
+          {"day": "Wednesday", "time": "15:00 - 16:30"}
+        ],
+        "studentsEnrolled": [5]
+      }
+    ]
+  }
+  
