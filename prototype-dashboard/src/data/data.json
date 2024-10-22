@@ -1,0 +1,963 @@
+{
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Dennis Baptist",
+        "subject": "Communication III"
+      },
+      {
+        "id": 2,
+        "name": "Bert Heyman",
+        "subject": "Design V"
+      },
+      {
+        "id": 3,
+        "name": "Stefan Tilburgs",
+        "subject": "Development V"
+      },
+      {
+        "id": 4,
+        "name": "Jan Van Caneghem",
+        "subject": "Expert Lab"
+      },
+      {
+        "id": 5,
+        "name": "Ben Verschooris",
+        "subject": "Final Work"
+      },
+      {
+        "id": 6,
+        "name": "Hilko Van Hauthem",
+        "subject": "Grow III"
+      },
+      {
+        "id": 7,
+        "name": "Joni De Borger",
+        "subject": "Internship"
+      },
+      {
+        "id": 8,
+        "name": "Peter Dickx",
+        "subject": "Development V"
+      }
+    ],
+    
+    "courses": [
+        {
+          "id": 1,
+          "name": "Communication III",
+          "teacher": "Dennis Baptist",
+          "schedule": [
+            { "day": "Friday", "time": "13:00 - 16:00" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Design V",
+          "teacher": "Bert Heyman",
+          "schedule": [
+            { "day": "Friday", "time": "09:00 - 12:00" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Grow III",
+          "teacher": "Jan Van Caneghem",
+          "schedule": [
+            { "day": "Monday", "time": "13:00 - 16:00" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Development V",
+          "teacher": "Stefan Tilburgs",
+          "schedule": [
+            { "day": "Monday", "time": "09:00 - 12:00" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Expert Lab",
+          "teacher": "Ben Verschooris",
+          "schedule": [
+            { "day": "Tuesday", "time": "09:00 - 16:00" },
+            { "day": "Wednesday", "time": "09:00 - 16:00" },
+            { "day": "Thursday", "time": "09:00 - 12:00" }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Internship",
+          "teacher": "Various Supervisors",
+          "schedule": [
+            { "day": "From January", "time": "Depends on internship term" }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Final Work",
+          "teacher": "Project Supervisor",
+          "schedule": [
+            { "day": "Whole Year", "time": "No fixed schedule" }
+          ]
+        }
+      ],
+  
+    "students": [
+      {
+        "id": 1,
+        "name": "Ziad Aadim",
+        "year": 3,
+        "courses": {
+          "Communication III": 85,
+          "Design V": 78,
+          "Development V": 92,
+          "Expert Lab": 88,
+          "Final Work": 75,
+          "Grow III": 80,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 2,
+        "name": "Safwane Ahdi",
+        "year": 3,
+        "courses": {
+          "Communication III": 70,
+          "Design V": 85,
+          "Development V": 89,
+          "Expert Lab": 95,
+          "Final Work": 80,
+          "Grow III": 85,
+          "Internship": 78
+        }
+      },
+      {
+        "id": 3,
+        "name": "Nabras Ahmad",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 88,
+          "Development V": 99,
+          "Expert Lab": 85,
+          "Final Work": 82,
+          "Grow III": 79,
+          "Internship": 84
+        }
+      },
+      {
+        "id": 4,
+        "name": "Stephen Asante",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 81,
+          "Development V": 88,
+          "Expert Lab": 86,
+          "Final Work": 80,
+          "Grow III": 77,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 5,
+        "name": "Youssef Auassar",
+        "year": 3,
+        "courses": {
+          "Communication III": 68,
+          "Design V": 79,
+          "Development V": 85,
+          "Expert Lab": 84,
+          "Final Work": 77,
+          "Grow III": 75,
+          "Internship": 82
+        }
+      },
+      {
+        "id": 6,
+        "name": "Maxime Bastien",
+        "year": 3,
+        "courses": {
+          "Communication III": 72,
+          "Design V": 83,
+          "Development V": 90,
+          "Expert Lab": 85,
+          "Final Work": 78,
+          "Grow III": 81,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 7,
+        "name": "Meryam Belaouchi",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 84,
+          "Development V": 87,
+          "Expert Lab": 90,
+          "Final Work": 83,
+          "Grow III": 88,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 8,
+        "name": "Bieke Bellot",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 76,
+          "Development V": 85,
+          "Expert Lab": 82,
+          "Final Work": 80,
+          "Grow III": 79,
+          "Internship": 81
+        }
+      },
+      {
+        "id": 9,
+        "name": "Kobe Berckmans",
+        "year": 3,
+        "courses": {
+          "Communication III": 76,
+          "Design V": 79,
+          "Development V": 83,
+          "Expert Lab": 88,
+          "Final Work": 79,
+          "Grow III": 85,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 10,
+        "name": "Rowan Biets",
+        "year": 3,
+        "courses": {
+          "Communication III": 83,
+          "Design V": 82,
+          "Development V": 91,
+          "Expert Lab": 87,
+          "Final Work": 82,
+          "Grow III": 84,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 11,
+        "name": "Dikra Bouabdellah",
+        "year": 3,
+        "courses": {
+          "Communication III": 84,
+          "Design V": 87,
+          "Development V": 89,
+          "Expert Lab": 88,
+          "Final Work": 83,
+          "Grow III": 86,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 12,
+        "name": "Abdella Boutaarourt",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 82,
+          "Development V": 84,
+          "Expert Lab": 80,
+          "Final Work": 76,
+          "Grow III": 81,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 13,
+        "name": "Abdeslam Boutaarourt",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 80,
+          "Development V": 86,
+          "Expert Lab": 83,
+          "Final Work": 77,
+          "Grow III": 79,
+          "Internship": 82
+        }
+      },
+      {
+        "id": 14,
+        "name": "Mikolaj Buelens",
+        "year": 3,
+        "courses": {
+          "Communication III": 77,
+          "Design V": 85,
+          "Development V": 88,
+          "Expert Lab": 86,
+          "Final Work": 80,
+          "Grow III": 82,
+          "Internship": 84
+        }
+      },
+      {
+        "id": 15,
+        "name": "Nicolas Buscemi",
+        "year": 3,
+        "courses": {
+          "Communication III": 72,
+          "Design V": 81,
+          "Development V": 85,
+          "Expert Lab": 83,
+          "Final Work": 78,
+          "Grow III": 80,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 16,
+        "name": "Jef Claeyé",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 88,
+          "Development V": 91,
+          "Expert Lab": 85,
+          "Final Work": 83,
+          "Grow III": 87,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 17,
+        "name": "Jonathan Claeys",
+        "year": 3,
+        "courses": {
+          "Communication III": 76,
+          "Design V": 83,
+          "Development V": 87,
+          "Expert Lab": 81,
+          "Final Work": 78,
+          "Grow III": 85,
+          "Internship": 84
+        }
+      },
+      {
+        "id": 18,
+        "name": "Sarah Clement",
+        "year": 3,
+        "courses": {
+          "Communication III": 88,
+          "Design V": 91,
+          "Development V": 92,
+          "Expert Lab": 90,
+          "Final Work": 86,
+          "Grow III": 89,
+          "Internship": 93
+        }
+      },
+      {
+        "id": 19,
+        "name": "Robbe De Clerck",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 86,
+          "Development V": 88,
+          "Expert Lab": 84,
+          "Final Work": 79,
+          "Grow III": 83,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 20,
+        "name": "Jules De Pauw",
+        "year": 3,
+        "courses": {
+          "Communication III": 82,
+          "Design V": 84,
+          "Development V": 90,
+          "Expert Lab": 89,
+          "Final Work": 81,
+          "Grow III": 85,
+          "Internship": 88
+        }
+      },
+      {
+        "id": 21,
+        "name": "Julien De Reuse",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 82,
+          "Development V": 87,
+          "Expert Lab": 80,
+          "Final Work": 78,
+          "Grow III": 85,
+          "Internship": 83
+        }
+      },
+      {
+        "id": 22,
+        "name": "Freya De Vos",
+        "year": 3,
+        "courses": {
+          "Communication III": 79,
+          "Design V": 86,
+          "Development V": 90,
+          "Expert Lab": 87,
+          "Final Work": 81,
+          "Grow III": 82,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 23,
+        "name": "Staf Dierickx",
+        "year": 3,
+        "courses": {
+          "Communication III": 82,
+          "Design V": 85,
+          "Development V": 88,
+          "Expert Lab": 83,
+          "Final Work": 80,
+          "Grow III": 84,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 24,
+        "name": "Zani Dobruna",
+        "year": 3,
+        "courses": {
+          "Communication III": 84,
+          "Design V": 87,
+          "Development V": 90,
+          "Expert Lab": 86,
+          "Final Work": 82,
+          "Grow III": 88,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 25,
+        "name": "Marten Driesen",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 80,
+          "Development V": 85,
+          "Expert Lab": 82,
+          "Final Work": 77,
+          "Grow III": 81,
+          "Internship": 83
+        }
+      },
+      {
+        "id": 26,
+        "name": "Wail El Majdoubi",
+        "year": 3,
+        "courses": {
+          "Communication III": 70,
+          "Design V": 83,
+          "Development V": 86,
+          "Expert Lab": 84,
+          "Final Work": 78,
+          "Grow III": 79,
+          "Internship": 81
+        }
+      },
+      {
+        "id": 27,
+        "name": "Achille Ernould",
+        "year": 3,
+        "courses": {
+          "Communication III": 76,
+          "Design V": 85,
+          "Development V": 88,
+          "Expert Lab": 82,
+          "Final Work": 80,
+          "Grow III": 83,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 28,
+        "name": "Bram Eylenbosch",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 87,
+          "Development V": 89,
+          "Expert Lab": 85,
+          "Final Work": 82,
+          "Grow III": 86,
+          "Internship": 88
+        }
+      },
+      {
+        "id": 29,
+        "name": "Nelle Favoreel",
+        "year": 3,
+        "courses": {
+          "Communication III": 79,
+          "Design V": 86,
+          "Development V": 90,
+          "Expert Lab": 88,
+          "Final Work": 83,
+          "Grow III": 87,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 30,
+        "name": "Rémy Gistelinck",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 89,
+          "Development V": 92,
+          "Expert Lab": 90,
+          "Final Work": 85,
+          "Grow III": 89,
+          "Internship": 91
+        }
+      },
+      {
+        "id": 31,
+        "name": "Taha Hasan",
+        "year": 3,
+        "courses": {
+          "Communication III": 76,
+          "Design V": 83,
+          "Development V": 87,
+          "Expert Lab": 84,
+          "Final Work": 79,
+          "Grow III": 82,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 32,
+        "name": "Thomas Heusdens",
+        "year": 3,
+        "courses": {
+          "Communication III": 81,
+          "Design V": 86,
+          "Development V": 89,
+          "Expert Lab": 87,
+          "Final Work": 83,
+          "Grow III": 85,
+          "Internship": 88
+        }
+      },
+      {
+        "id": 33,
+        "name": "Sabri Imnadine",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 81,
+          "Development V": 85,
+          "Expert Lab": 83,
+          "Final Work": 79,
+          "Grow III": 80,
+          "Internship": 82
+        }
+      },
+      {
+        "id": 34,
+        "name": "Gauthier Lambeau",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 84,
+          "Development V": 88,
+          "Expert Lab": 86,
+          "Final Work": 81,
+          "Grow III": 85,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 35,
+        "name": "Wannes Lambeens",
+        "year": 3,
+        "courses": {
+          "Communication III": 82,
+          "Design V": 89,
+          "Development V": 92,
+          "Expert Lab": 88,
+          "Final Work": 84,
+          "Grow III": 86,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 36,
+        "name": "Sabri Lassouli",
+        "year": 3,
+        "courses": {
+          "Communication III": 70,
+          "Design V": 79,
+          "Development V": 82,
+          "Expert Lab": 80,
+          "Final Work": 76,
+          "Grow III": 78,
+          "Internship": 83
+        }
+      },
+      {
+        "id": 37,
+        "name": "Naïl L'Maimouni",
+        "year": 3,
+        "courses": {
+          "Communication III": 74,
+          "Design V": 83,
+          "Development V": 86,
+          "Expert Lab": 82,
+          "Final Work": 78,
+          "Grow III": 81,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 38,
+        "name": "Glory Menga",
+        "year": 3,
+        "courses": {
+          "Communication III": 79,
+          "Design V": 85,
+          "Development V": 88,
+          "Expert Lab": 86,
+          "Final Work": 80,
+          "Grow III": 83,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 39,
+        "name": "Liam Mosselmans",
+        "year": 3,
+        "courses": {
+          "Communication III": 81,
+          "Design V": 87,
+          "Development V": 91,
+          "Expert Lab": 89,
+          "Final Work": 84,
+          "Grow III": 85,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 40,
+        "name": "Aylin Özcan",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 83,
+          "Development V": 86,
+          "Expert Lab": 82,
+          "Final Work": 79,
+          "Grow III": 80,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 41,
+        "name": "Noham Pace Alkhomaili",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 86,
+          "Development V": 90,
+          "Expert Lab": 88,
+          "Final Work": 82,
+          "Grow III": 85,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 42,
+        "name": "Jarno Pauwels",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 85,
+          "Development V": 87,
+          "Expert Lab": 83,
+          "Final Work": 79,
+          "Grow III": 81,
+          "Internship": 84
+        }
+      },
+      {
+        "id": 43,
+        "name": "Carysa Peeters",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 83,
+          "Development V": 88,
+          "Expert Lab": 86,
+          "Final Work": 80,
+          "Grow III": 84,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 44,
+        "name": "Louis-James Pouleur",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 87,
+          "Development V": 91,
+          "Expert Lab": 89,
+          "Final Work": 84,
+          "Grow III": 87,
+          "Internship": 90
+        }
+      },
+      {
+        "id": 45,
+        "name": "Mohammad Rashid",
+        "year": 3,
+        "courses": {
+          "Communication III": 77,
+          "Design V": 84,
+          "Development V": 86,
+          "Expert Lab": 82,
+          "Final Work": 78,
+          "Grow III": 81,
+          "Internship": 84
+        }
+      },
+      {
+        "id": 46,
+        "name": "Amaury Rauw",
+        "year": 3,
+        "courses": {
+          "Communication III": 79,
+          "Design V": 86,
+          "Development V": 89,
+          "Expert Lab": 85,
+          "Final Work": 81,
+          "Grow III": 84,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 47,
+        "name": "Mitch Saah",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 88,
+          "Development V": 90,
+          "Expert Lab": 87,
+          "Final Work": 83,
+          "Grow III": 85,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 48,
+        "name": "Michaël Stoikos",
+        "year": 3,
+        "courses": {
+          "Communication III": 72,
+          "Design V": 80,
+          "Development V": 84,
+          "Expert Lab": 81,
+          "Final Work": 77,
+          "Grow III": 79,
+          "Internship": 82
+        }
+      },
+      {
+        "id": 49,
+        "name": "Jochen Sunaert",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 85,
+          "Development V": 88,
+          "Expert Lab": 83,
+          "Final Work": 79,
+          "Grow III": 82,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 50,
+        "name": "Yassine Tazi",
+        "year": 3,
+        "courses": {
+          "Communication III": 81,
+          "Design V": 88,
+          "Development V": 91,
+          "Expert Lab": 89,
+          "Final Work": 84,
+          "Grow III": 86,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 51,
+        "name": "Attila Tolnai",
+        "year": 3,
+        "courses": {
+          "Communication III": 75,
+          "Design V": 83,
+          "Development V": 87,
+          "Expert Lab": 85,
+          "Final Work": 81,
+          "Grow III": 83,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 52,
+        "name": "Berkay Unutkan",
+        "year": 3,
+        "courses": {
+          "Communication III": 77,
+          "Design V": 85,
+          "Development V": 89,
+          "Expert Lab": 84,
+          "Final Work": 79,
+          "Grow III": 81,
+          "Internship": 83
+        }
+      },
+      {
+        "id": 53,
+        "name": "Tuur Van Bergen",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 87,
+          "Development V": 90,
+          "Expert Lab": 88,
+          "Final Work": 83,
+          "Grow III": 85,
+          "Internship": 88
+        }
+      },
+      {
+        "id": 54,
+        "name": "Kian Van den bussche",
+        "year": 3,
+        "courses": {
+          "Communication III": 74,
+          "Design V": 81,
+          "Development V": 86,
+          "Expert Lab": 83,
+          "Final Work": 78,
+          "Grow III": 80,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 55,
+        "name": "Jasper Vanhaelen",
+        "year": 3,
+        "courses": {
+          "Communication III": 82,
+          "Design V": 85,
+          "Development V": 89,
+          "Expert Lab": 87,
+          "Final Work": 83,
+          "Grow III": 84,
+          "Internship": 86
+        }
+      },
+      {
+        "id": 56,
+        "name": "Anke Van Humbeeck",
+        "year": 3,
+        "courses": {
+          "Communication III": 79,
+          "Design V": 83,
+          "Development V": 87,
+          "Expert Lab": 85,
+          "Final Work": 80,
+          "Grow III": 82,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 57,
+        "name": "Ryan Vankriekinge",
+        "year": 3,
+        "courses": {
+          "Communication III": 77,
+          "Design V": 84,
+          "Development V": 88,
+          "Expert Lab": 82,
+          "Final Work": 79,
+          "Grow III": 81,
+          "Internship": 83
+        }
+      },
+      {
+        "id": 58,
+        "name": "Rachelle van Uden",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 86,
+          "Development V": 90,
+          "Expert Lab": 88,
+          "Final Work": 83,
+          "Grow III": 85,
+          "Internship": 87
+        }
+      },
+      {
+        "id": 59,
+        "name": "Seppe Verbeken",
+        "year": 3,
+        "courses": {
+          "Communication III": 82,
+          "Design V": 88,
+          "Development V": 91,
+          "Expert Lab": 89,
+          "Final Work": 85,
+          "Grow III": 87,
+          "Internship": 89
+        }
+      },
+      {
+        "id": 60,
+        "name": "Karsten Verherstraeten",
+        "year": 3,
+        "courses": {
+          "Communication III": 78,
+          "Design V": 84,
+          "Development V": 87,
+          "Expert Lab": 83,
+          "Final Work": 80,
+          "Grow III": 82,
+          "Internship": 85
+        }
+      },
+      {
+        "id": 61,
+        "name": "Zaïd Zobair",
+        "year": 3,
+        "courses": {
+          "Communication III": 80,
+          "Design V": 87,
+          "Development V": 90,
+          "Expert Lab": 88,
+          "Final Work": 84,
+          "Grow III": 86,
+          "Internship": 89
+        }
+      }
+    ]
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data/mockData.json';
+import data from '../data/data.json';
 
 const DashboardOverview = () => {
   const totalStudents = data.students.length;
