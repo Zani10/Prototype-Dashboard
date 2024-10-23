@@ -1,47 +1,67 @@
 {
-    "teachers": [
-      {
-        "id": 1,
-        "name": "Dennis Baptist",
-        "subject": "Communication III"
-      },
-      {
-        "id": 2,
-        "name": "Bert Heyman",
-        "subject": "Design V"
-      },
-      {
-        "id": 3,
-        "name": "Stefan Tilburgs",
-        "subject": "Development V"
-      },
-      {
-        "id": 4,
-        "name": "Jan Van Caneghem",
-        "subject": "Expert Lab"
-      },
-      {
-        "id": 5,
-        "name": "Ben Verschooris",
-        "subject": "Final Work"
-      },
-      {
-        "id": 6,
-        "name": "Hilko Van Hauthem",
-        "subject": "Grow III"
-      },
-      {
-        "id": 7,
-        "name": "Joni De Borger",
-        "subject": "Internship"
-      },
-      {
-        "id": 8,
-        "name": "Peter Dickx",
-        "subject": "Development V"
-      }
-    ],
-    
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dennis Baptist",
+      "subject": "Communication III",
+      "availability": [
+        { "day": "Friday", "time": "13:00 - 16:00" }
+      ],
+      "expertLabAvailability": [
+        { "day": "Tuesday", "time": "09:00 - 16:00" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bert Heyman",
+      "subject": "Design V",
+      "availability": [
+        { "day": "Friday", "time": "09:00 - 12:00" }
+      ],
+      "expertLabAvailability": [
+        { "day": "Wednesday", "time": "09:00 - 16:00" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jan Van Caneghem",
+      "subject": "Grow III",
+      "availability": [
+        { "day": "Monday", "time": "13:00 - 16:00" }
+      ],
+      "expertLabAvailability": [
+        { "day": "Thursday", "time": "09:00 - 12:00" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Stefan Tilburgs",
+      "subject": "Development V",
+      "availability": [
+        { "day": "Monday", "time": "09:00 - 12:00" }
+      ],
+      "expertLabAvailability": [
+        { "day": "Wednesday", "time": "09:00 - 16:00" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ben Verschooris",
+      "subject": "Expert Lab",
+      "availability": [
+        { "day": "Tuesday", "time": "09:00 - 16:00" },
+        { "day": "Wednesday", "time": "09:00 - 16:00" },
+        { "day": "Thursday", "time": "09:00 - 12:00" }
+      ],
+      "expertLabAvailability": [
+        { "day": "Tuesday", "time": "09:00 - 16:00" },
+        { "day": "Wednesday", "time": "09:00 - 16:00" },
+        { "day": "Thursday", "time": "09:00 - 12:00" }
+      ]
+    }
+  ],
+  "sharedSubjects": ["Internship", "Expert Lab"],
+
     "courses": [
         {
           "id": 1,
