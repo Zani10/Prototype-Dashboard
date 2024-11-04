@@ -72,21 +72,21 @@ Follow these steps to set up the project on your local machine.
 - Dark Mode Support: Toggle dark mode for a visually appealing user experience.
 
 ## Folder Structure
-  |-- dashboard-backend/
-  |   |-- controllers/
-  |   |-- models/
-  |   |-- routes/
-  |   |-- app.js
-  |   |-- db.js
-  |   |-- .env
-  |-- dashboard-frontend/
-  |   |-- src/
-  |       |-- assets/
-  |       |-- components/
-  |       |-- pages/
-  |       |-- App.tsx
-  |       |-- index.tsx
-  |-- README.md
+     |-- dashboard-backend/
+     |   |-- controllers/
+     |   |-- models/
+     |   |-- routes/
+     |   |-- app.js
+     |   |-- db.js
+     |   |-- .env
+     |-- dashboard-frontend/
+     |   |-- src/
+     |       |-- assets/
+     |       |-- components/
+     |       |-- pages/
+     |       |-- App.tsx
+     |       |-- index.tsx
+     |-- README.md
 
 
 ## SOURCES
