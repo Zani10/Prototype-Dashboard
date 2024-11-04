@@ -1,38 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { FaBook, FaClock } from 'react-icons/fa';
-import data from '../data/data.json';
 
-// Register necessary chart components
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-// Function to enroll a percentage of students in a course
-const getEnrolledStudentsForCourse = (courseName: string, enrollmentPercentage: number) => {
-  return data.students.filter(() => Math.random() < enrollmentPercentage / 100).length;
-};
-
 const CourseList = () => {
+  const [courses, setCourses] = useState([]);
+  const [students, setStudents] = useState([]);
   const [studentCountFilter, setStudentCountFilter] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>('');
 
   const enrollmentPercentages = {
-    'Communication III': 85,  
-    'Design V': 80,            
-    'Grow III': 70,            
-    'Development V': 90,       
-    'Expert Lab': 85,          
-    'Internship': 100,          
-    'Final Work': 100          
+    'Communication III': 85,
+    'Design V': 80,
+    'Grow III': 70,
+    'Development V': 90,
+    'Expert Lab': 85,
+    'Internship': 100,
+    'Final Work': 100,
   };
 
-  // Filter the courses and calculate the number of enrolled students
-  const filteredCourses = data.courses.filter(course =>
+
+  useEffect(() => {
+    fetch('http://localhost:3000/api/courses')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched courses data:', data); 
+        setCourses(data[0]?.courses || []); 
+      })
+      .catch(error => console.error('Error fetching courses:', error));
+
+    fetch('http://localhost:3000/api/students')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched students data:', data); 
+        setStudents(data[0]?.students || []); 
+      })
+      .catch(error => console.error('Error fetching students:', error));
+  }, []);
+
+
+  const getEnrolledStudentsForCourse = (courseName: string, enrollmentPercentage: number) => {
+    return students.filter(() => Math.random() < enrollmentPercentage / 100).length;
+  };
+
+  
+  const filteredCourses = courses.filter(course =>
     (studentCountFilter ? getEnrolledStudentsForCourse(course.name, enrollmentPercentages[course.name]) >= studentCountFilter : true) &&
     (searchTerm ? course.name.toLowerCase().includes(searchTerm.toLowerCase()) : true)
   );
 
-  // Create student distribution data for the pie chart
+ 
   const studentDistributionData = {
     labels: filteredCourses.map(course => course.name),
     datasets: [
@@ -75,12 +94,12 @@ const CourseList = () => {
         </div>
         <div className="grid grid-cols-1 gap-4">
           {filteredCourses.map((course) => (
-            <div key={course.id} className="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
+            <div key={course._id} className="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center gap-4 mb-4">
                 <FaBook className="text-green-500 text-3xl" />
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">{course.name}</h3>
-                  <p className="text-sm text-gray-600">Enrolled Students: {getEnrolledStudentsForCourse(course.name, enrollmentPercentages[course.name])}</p>  {/* Display dynamic enrollment */}
+                  <p className="text-sm text-gray-600">Enrolled Students: {getEnrolledStudentsForCourse(course.name, enrollmentPercentages[course.name])}</p>
                 </div>
               </div>
               <div className="text-gray-700 mb-2">

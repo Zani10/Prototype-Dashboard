@@ -13,7 +13,7 @@ const Notification = () => {
   return (
     <div className="fixed top-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg animate-fadeIn">
       <p className="text-sm font-semibold">Upcoming Exam Alert!</p>
-      <p className="text-xs">Don't forget the math exam on Monday!</p>
+      <p className="text-xs">Don't forget the Web II theory exam on Monday!</p>
     </div>
   );
 };

@@ -1,13 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaChalkboardTeacher, FaCalendarCheck, FaFlask, FaBriefcase } from 'react-icons/fa';
-import data from '../data/data.json';
 
 const TeacherList = () => {
+  const [teachers, setTeachers] = useState([]);
   const [nameFilter, setNameFilter] = useState<string>('');
   const [subjectFilter, setSubjectFilter] = useState<string>('');
 
-  // Filtered list of teachers
-  const filteredTeachers = data.teachers.filter(teacher =>
+  useEffect(() => {
+    fetch('http://localhost:3000/api/teachers')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched teachers data:', data); 
+        setTeachers(data[0]?.teachers || []); 
+      })
+      .catch(error => console.error('Error fetching teachers:', error));
+  }, []);
+
+  const filteredTeachers = teachers.filter(teacher =>
     (nameFilter ? teacher.name.toLowerCase().includes(nameFilter.toLowerCase()) : true) &&
     (subjectFilter ? teacher.subject.toLowerCase().includes(subjectFilter.toLowerCase()) : true)
   );
@@ -35,7 +44,7 @@ const TeacherList = () => {
       {/* Main Teacher Availability Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredTeachers.map((teacher) => (
-          <div key={teacher.id} className="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
+          <div key={teacher._id} className="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center gap-4 mb-4">
               <FaChalkboardTeacher className="text-purple-500 text-3xl" />
               <div>
@@ -68,9 +77,9 @@ const TeacherList = () => {
           <FaFlask className="text-green-500" /> Expert Lab Availability
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.teachers.map((teacher) =>
+          {teachers.map((teacher) =>
             teacher.expertLabAvailability && teacher.expertLabAvailability.length > 0 ? (
-              <div key={teacher.id} className="bg-gray-100 shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
+              <div key={teacher._id} className="bg-gray-100 shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center gap-4 mb-4">
                   <FaFlask className="text-green-500 text-3xl" />
                   <div>
@@ -100,8 +109,8 @@ const TeacherList = () => {
           <FaBriefcase className="text-blue-500" /> Internship Participation
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.teachers.map((teacher) => (
-            <div key={teacher.id} className="bg-gray-100 shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
+          {teachers.map((teacher) => (
+            <div key={teacher._id} className="bg-gray-100 shadow-lg rounded-lg p-5 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center gap-4 mb-4">
                 <FaBriefcase className="text-blue-500 text-3xl" />
                 <div>
